@@ -3,7 +3,8 @@ Description=Run foo weekly and on boot
 
 [Timer]
 OnBootSec=1min
-OnUnitActiveSec=1w 
+OnUnitActiveSec=5min 
+WakeSystem=true
 
 [Install]
 WantedBy=timers.target
