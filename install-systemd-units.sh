@@ -1,3 +1,4 @@
 #!/bin/bash
 sudo cp slacker.service /etc/systemd/system/
 sudo cp slacker.timer /etc/systemd/system/
+sudo systemctl enable slacker.timer
