@@ -3,6 +3,7 @@ Description=Slacks off
 Wants=slacker.timer
 
 [Service]
+WorkingDirectory=/opt/projects/slacker
 Type=oneshot
 ExecStart=/usr/bin/free
 ExecStart=/usr/bin/lsblk
