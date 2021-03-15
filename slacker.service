@@ -1,0 +1,12 @@
+[Unit]
+Description=Slacks off
+Wants=slacker.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/free
+ExecStart=/usr/bin/lsblk
+ExecStart=/opt/projects/slacker/slacker.sh
+
+[Install]
+WantedBy=multi-user.target
