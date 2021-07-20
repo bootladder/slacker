@@ -6,9 +6,12 @@ import (
 	"github.com/slack-go/slack"
 )
 
+// todo get the token from somewhere
+
 func main() {
 	fmt.Print("sldakjf\n")
-	api := slack.New(nothing)
+	api := slack.New("nothing")
+
 	attachment := slack.Attachment{
 		Pretext: "some pretext",
 		Text:    "some text",
